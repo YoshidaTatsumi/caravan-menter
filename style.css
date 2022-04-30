@@ -1,0 +1,197 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+a {
+  text-decoration: none;
+  color: #6c6b6b;
+}
+
+/* デフォルトサイズに変更 */
+h1 {
+  font-size: 48px;
+}
+
+/* デフォルトサイズに変更 */
+h2 {
+  font-size: 36px;
+}
+
+/* デフォルトサイズに変更 */
+h3 {
+  font-size: 24px;
+}
+
+header,
+nav,
+h2,
+.main-visual,
+footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+
+.head-line {
+  font-size: 32px;
+}
+
+.main-visual {
+  width: 100%; /* 横幅いっぱい */
+  height: 300px; /* 高さ300px */
+  background-image: url(img/mv.jpg);
+  background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
+  background-position: center; /* 背景画像を中央に配置 */
+}
+
+.main-visual-content {
+  height: 300px; /* 親に合わせる */
+  background-color: rgba(0, 0, 0, 0.5); /* 背景色を半透明の黒にする */
+  text-align: center; /* 文字を中央揃えにする */
+  padding-top: 105px; /* 上側の内側余白で垂直方向の位置を調整 */
+}
+
+.main-visual-text {
+  color: #fff; /* 文字色を白に変更 */
+}
+
+.main-visual-name {
+  color: #fff; /* 文字色を白に変更 */
+}
+
+main {
+  width: 800px; /* 横幅800px */
+  padding: 70px 0; /* 上下に70px、左右に0pxの内側余白 */
+}
+
+.blog-heading {
+  border-bottom: 8px solid #f7f7f7;
+  text-align: center;
+  line-height: 0.6;
+}
+
+.blog-item {
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.blog-image {
+  height: 180px;
+}
+
+.blog-text {
+  padding: 25px 0 0 30px;
+}
+
+.blog-text-heading {
+  padding-bottom: 15px;
+}
+
+.blog-date {
+  font-size: 12px;
+  margin: 0;
+}
+
+.category {
+  padding: 5px 8px;
+  background-color: #acabab;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
+}
+
+.pagination p {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  color: #fff;
+  background-color: #acabab;
+  border-radius: 3px;
+  line-height: 30px;
+}
+
+.common-heading {
+  border-bottom: 8px solid #f7f7f7;
+  line-height: 0.6;
+}
+
+.sidebar-contents {
+  padding: 50px 0;
+}
+
+.popular-text,
+.categories-text {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 5px;
+}
+
+.popular-text:last-child,
+.categories-text:last-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.instagram-box {
+  width: 110px;
+  padding-top: 110px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.instagram-box-1 {
+  background-image: url(img/airport.jpg);
+}
+
+.instagram-box-2 {
+  background-image: url(img/japan.jpg);
+}
+
+.instagram-box-3 {
+  background-image: url(img/snow.jpg);
+}
+
+.instagram-box-4 {
+  background-image: url(img/japan2.jpg);
+}
+
+.instagram-box-5 {
+  background-image: url(img/lake.jpg);
+}
+
+.instagram-box-6 {
+  background-image: url(img/road.jpg);
+}
+
+footer {
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  background-color: #848282;
+}
+
+.footer-text {
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  main {
+    width: 100%;
+  }
+
+  .blog-image {
+    width: 100%;
+  }
+
+  .pagination {
+    margin-bottom: 50px;
+  }
+
+  .instagram-box {
+    width: 100%;
+    padding-top: 100%;
+  }
+}
